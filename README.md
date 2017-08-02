@@ -10,7 +10,7 @@ The implementation can be compared against normal Stochastic Gradient Descent by
 
 
 ### Results
-Performance for Synaptic Intelligence (left) is still at 93% after training on 10 Permuted MNIST tasks. On the contrary, standard Stochastic Gradient Descent is around 76%.
+Performance for Synaptic Intelligence (left) is still at 93% after training on 10 Permuted MNIST tasks. On the contrary, standard Stochastic Gradient Descent is around 76%. The final accuracy is lower than that reported in the main paper. This is due to our use of a smaller network and its lack of dropout. Both modifications are easy to make and achieve significantly improved performance. Also note that different optimizers may be used instead of SGD. However, in that case, the code should be modified to compute the weights changes at each step explicitly (the code is available on request but it is not in this repository yet).
 ![alt tag](images/accuracy.png)
 
 
