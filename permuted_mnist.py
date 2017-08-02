@@ -170,14 +170,15 @@ for task in range(num_tasks_to_run):
 
 
 import matplotlib.pyplot as plt
-plt.plot(first_performance)
-plt.plot(last_performance)
-plt.plot(avg_performance)
+tasks = range(1,num_tasks_to_run+1)
+plt.plot(tasks, first_performance)
+plt.plot(tasks, last_performance)
+plt.plot(tasks, avg_performance)
 plt.legend(["Task 0 (t=i)", "Task i (t=i)", "Avg Task (t=i)"], loc='lower right')
 plt.xlabel("Task")
 plt.ylabel("Accuracy (%)")
 plt.ylim([50, 100])
-plt.xticks(range(1,num_tasks_to_run+1))
+plt.xticks(tasks)
 plt.show()
 
 
