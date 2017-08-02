@@ -10,7 +10,7 @@ The implementation can be compared against normal Stochastic Gradient Descent by
 
 
 ### Results
-Performance for Synaptic Intelligence (left) is still above 94% after training on 10 Permuted MNIST tasks. On the contrary, standard Stochastic Gradient Descent is around 75%.
+Performance for Synaptic Intelligence (left) is still at 93% after training on 10 Permuted MNIST tasks. On the contrary, standard Stochastic Gradient Descent is around 76%.
 ![alt tag](images/accuracy.png)
 
 
